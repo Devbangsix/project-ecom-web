@@ -24,7 +24,7 @@ const ecomStore = (set, get) => ({
         const res = await axios.post('https://project-ecom-api.vercel.app/Ping-eco/login', form)
         // console.log(res.data.token)
         set({
-            user: res.data.Payload,
+            user: res.data.payload,
             token: res.data.token
         })
         return res
