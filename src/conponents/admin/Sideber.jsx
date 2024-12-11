@@ -60,7 +60,7 @@ const Sideber = () => {
       </div>
 
        <div  className='flex flex-col px-4 py-4 '>
-        <NavLink className={({isActive})=>
+        <NavLink to={''} className={({isActive})=>
           isActive ? ' bg-red-600 font-white px-4 py-2 hover:bg-red-500 flex items-center':
          'text-gray-300 px-4 py-2 hover:bg-gray-700 hover:text-white rounded flex items-center'
         }>
