@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const currentUesr = async (token) =>
+export const currentUser = async (token) =>
     await axios.post('https://project-ecom-api.vercel.app/Ping-eco/current-user',{},{
     headers:{
         Authorization: `Bearer ${token}`
