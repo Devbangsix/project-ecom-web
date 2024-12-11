@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { LayoutDashboard } from 'lucide-react';
 import { Kanban , ChartBarStacked, FolderKanban, LogOut ,ListOrdered   } from 'lucide-react';
@@ -6,6 +6,7 @@ import uesEcomStore from '../../store/ecom-store';
 
 const Sideber = () => {
   const logout = uesEcomStore((s) => s.logout)
+  // const [isLogin , setIslogin] = useState(false)
   
   return (
     <div className='bg-slate-800 w-64 text-gray-100 flex flex-col h-screen'>
@@ -60,7 +61,7 @@ const Sideber = () => {
       </div>
 
        <div  className='flex flex-col px-4 py-4 '>
-        <NavLink to={''} className={({isActive})=>
+        <NavLink to={'/'} className={({isActive})=>
           isActive ? ' bg-red-600 font-white px-4 py-2 hover:bg-red-500 flex items-center':
          'text-gray-300 px-4 py-2 hover:bg-gray-700 hover:text-white rounded flex items-center'
         }>
